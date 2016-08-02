@@ -164,3 +164,43 @@ div.navsWrapper {
     border-top: 4px solid white;
     backface-visibility:hidden;
 }
+#ninja-slider-prev::before {
+    -ms-transform:rotate(-45deg);/*IE 9*/
+    -webkit-transform:rotate(-45deg);
+    transform: rotate(-45deg);
+    right:15px;
+}
+
+#ninja-slider-next::before {
+    -ms-transform:rotate(135deg);/*IE 9*/
+    -webkit-transform:rotate(135deg);
+    transform: rotate(135deg);
+    left:15px;
+}
+
+
+/*------ pager(nav bullets) ------*/      
+/* The pager id should be: slider id + "-pager" */
+#ninja-slider-pager, #ninja-slider-pause-play { display:none;} 
+
+
+/*Responsive settings*/
+@media only screen and (max-width:500px){
+
+    #ninja-slider-prev, #ninja-slider-next, #ninja-slider-pager {
+        display:none;
+    }
+}
+
+@media only screen and (max-width:1100px){    
+    #ninja-slider .caption {
+        font-size:7em;
+    }
+}
+
+@media only screen and (max-width:700px){    
+    #ninja-slider .caption {
+        font-size:3em;
+    }
+}
+
